@@ -1,10 +1,16 @@
+// manifest.json
 {
-  "manifest_version": 3,
-  "name": "JSON Copier",
+  "name": "Copy Network Request Response",
   "version": "1.0",
-  "description": "Copies a JSON file from a network request.",
-  "permissions": ["activeTab", "webRequest", "webNavigation", "storage"],
-  "background": {
-    "service_worker": "background.js"
+  "description": "Copies the network request response from a specific request URL to the clipboard.",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
   }
 }
