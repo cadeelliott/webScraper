@@ -10,7 +10,7 @@
       "js": ["contentscript.js"]
     }
   ],
-  "browser_action": {
-    "default_popup": "popup.html"
+  "action": {
+    "default_popup_url": "popup.html"
   }
 }
