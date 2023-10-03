@@ -1,4 +1,3 @@
-// contentscript.js
 chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
   if (message.type === "copy-network-request-response") {
     const url = message.url;
