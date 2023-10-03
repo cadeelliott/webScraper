@@ -5,6 +5,6 @@
   "description": "Copies a JSON file from a network request.",
   "permissions": ["<all_urls>"],
   "background": {
-    "service_worker": ["background.js"]
+    "service_worker": "background.js"
   }
 }
