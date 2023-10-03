@@ -3,7 +3,7 @@
   "name": "JSON Copier",
   "version": "1.0",
   "description": "Copies a JSON file from a network request.",
-  "permissions": ["<all_urls>"],
+  "permissions": ["activeTab", "webRequest", "webNavigation", "storage"],
   "background": {
     "service_worker": "background.js"
   }
